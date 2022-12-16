@@ -67,7 +67,10 @@ function animate() {
   ctx.strokeStyle = "blue";
   ctx.stroke();
   ctx.closePath();
-  
+  ctx.arc(x,y,10,0,Math.PI*2)
+  ctx.fillStyle = "purple"
+  ctx.fill()
+  ctx.fillStyle = "black"
   ctx.font = "bold 48px serif";
   ctx.fillText(`${hours}:${minutes}:${seconds}`, x, y + r + 30);
   
